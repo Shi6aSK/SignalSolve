@@ -22,4 +22,10 @@ right: 2rem;
 st.markdown(page_bg_img, unsafe_allow_html=True)
 st.title("SignalSolve")
 
-st.write("An AI aid for your microphone which separates you from the noisy environment and helps boost your productivity.")
+st.write("## An AI aid for your microphone which separates you from the noisy environment and helps boost your productivity.")
+# Add a download button in the sidebar
+st.sidebar.markdown("""
+<a href="https://download.krisp.ai/win" download>
+    <button>Download</button>
+</a>
+""", unsafe_allow_html=True)

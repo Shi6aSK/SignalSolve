@@ -83,7 +83,9 @@ def main():
     """
 
     st.markdown(page_bg_img, unsafe_allow_html=True)
-    st.title("Audio/Video Clearing Application")
+    st.title("AudioCleaner")
+
+    st.write("## Drop down the file whose noisy audio you need to get cleaned.")
 
     file_type = st.radio("Select file type", ["audio", "video"])
     file = st.file_uploader(f"Upload a {file_type} file", type=[file_type])

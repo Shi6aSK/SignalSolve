@@ -31,13 +31,13 @@ def text_to_speech(text: str, lang='en', voice_name='default'):
     return audio_file_path
 
 # Streamlit UI setup
-st.title("Text to Speech Converter (Google TTS)")
-st.markdown("This app converts text to speech using Google's Text-to-Speech API.")
+st.title("Give voice to your Scripts")
+st.markdown("Write your text and convert it to speech!")
 
 
 
 # Text input from user
-user_input = st.text_area("Enter text to convert to speech", "Hello, welcome to our text to speech converter!")
+user_input = st.text_area("Enter text to convert to speech", "This is a sample text. You can change it to anything you want.")
 
 # Select box for language selection
 language = st.selectbox("Select Language", ["en", "es", "fr", "de"])
