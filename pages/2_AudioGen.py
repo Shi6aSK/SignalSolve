@@ -2,6 +2,27 @@ from gtts import gTTS
 import os
 import streamlit as st
 
+page_bg_img = f"""
+<style>
+[data-testid="stAppViewContainer"] > .main {{
+background-image: url("https://raw.githubusercontent.com/Shi6aSK/SignalSolve/main/pages/Try%20Online.png");
+background-size: 100%;
+background-position: top left;
+background-repeat: no-repeat;
+background-attachment: local;
+}}
+
+[data-testid="stHeader"] {{
+background: rgba(0,0,0,0);
+}}
+
+[data-testid="stToolbar"] {{
+right: 2rem;
+}}
+</style>
+"""
+
+st.markdown(page_bg_img, unsafe_allow_html=True)
 # Function to convert text to speech using Google Text-to-Speech API
 def text_to_speech(text: str, lang='en', voice_name='default'):
     tts = gTTS(text=text, lang=lang, tld='com', slow=False, lang_check=False)
@@ -12,6 +33,8 @@ def text_to_speech(text: str, lang='en', voice_name='default'):
 # Streamlit UI setup
 st.title("Text to Speech Converter (Google TTS)")
 st.markdown("This app converts text to speech using Google's Text-to-Speech API.")
+
+
 
 # Text input from user
 user_input = st.text_area("Enter text to convert to speech", "Hello, welcome to our text to speech converter!")
