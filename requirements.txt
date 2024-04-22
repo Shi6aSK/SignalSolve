@@ -3,3 +3,7 @@ librosa
 moviepy
 pydub
 soundfile
+pyaudio
+SpeechRecognition
+noisereduce
+
