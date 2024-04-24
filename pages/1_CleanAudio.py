@@ -27,9 +27,8 @@ right: 2rem;
 }}
 </style>
 """
-
 UNDER_CONSTRUCTION = False
-page_meta(page_title="Clean Background Noise", page_icon="🎸", is_under_construction=UNDER_CONSTRUCTION)
+page_meta(page_title="Background noise reduction", page_icon="🎤", is_under_construction=UNDER_CONSTRUCTION)
 if not UNDER_CONSTRUCTION:
     file = st.file_uploader(label="Upload your audio file", accept_multiple_files=False, type=["mp3", "wav"])
     if file is not None:
