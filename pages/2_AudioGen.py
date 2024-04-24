@@ -21,8 +21,8 @@ right: 2rem;
 }}
 </style>
 """
-
 st.markdown(page_bg_img, unsafe_allow_html=True)
+
 # Function to convert text to speech using Google Text-to-Speech API
 def text_to_speech(text: str, lang='en', voice_name='default'):
     tts = gTTS(text=text, lang=lang, tld='com', slow=False, lang_check=False)

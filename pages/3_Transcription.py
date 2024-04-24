@@ -53,7 +53,10 @@ right: 2rem;
 }}
 </style>
 """
+
 page_meta(page_title="Audio to text", page_icon="🎤")
+
+st.markdown(page_bg_img, unsafe_allow_html=True)
 
 if "abort_loading" not in st.session_state:
     st.session_state.abort_loading = False
