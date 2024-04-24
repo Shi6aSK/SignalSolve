@@ -108,7 +108,7 @@ if file is not None:
             st.audio(AUDIO_FILE)
             st.subheader("Preview")
             with st.expander("Expand"):
-                st.code(transcribe, language="plaintext")
+                st.markdown(transcribe)
             FILENAME_NO_EXT = file_name.split(".")[0]
             TRANS_FILENAME = f"{FILENAME_NO_EXT}.{file_type}"
             TRANS_FILE = os.path.join(TMP_DIR, TRANS_FILENAME)
