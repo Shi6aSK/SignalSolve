@@ -1,2 +1,10 @@
 # SignalSolve
-Tackling Noise in Voice Singals using modern ML techniques
+One Stop Solution to all your audio need!
+
+## Components:
+Background Noise Removal
+Text-to-Speech Generator
+Speech-to-Text Transcriptor
+
+### Website: [Signal Solve](https://signalsolve.streamlit.app/)
+Streamlit Application
